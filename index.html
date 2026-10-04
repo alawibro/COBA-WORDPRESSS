@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya - Portal Anime & Teknologi</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER / NAVBAR */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* CONTAINER & POSTS */
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-tag {
+            font-size: 0.8rem;
+            color: #2563eb;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .card-excerpt {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">alawi wordpress</div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Teknologi</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Alawi suka Mahiru</h1>
+        <p>I love Mahiru.</p>
+        <a href="#posts" class="btn">Jelajahi Artikel</a>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container" id="posts">
+        <h2 class="section-title">Artikel Terbaru</h2>
+        
+        <div class="posts-grid">
+            
+            <!-- Kartu Artikel dari Foto Kamu -->
+            <article class="card">
+                <img src="mahiru.jpg" alt="Mahiru Shiina" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">ANIME</span>
+                    <h3 class="card-title"><a href="#">Remaja SMK Namanya alawi Menyukai Character Mahiru Shiina</a></h3>
+                    <p class="card-excerpt">Mahiru Cantik.</p>
+                    <a href="#" style="color: #2563eb; font-weight: 600; font-size: 0.9rem;">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Kartu Artikel Tambahan 1 -->
+            <article class="card">
+                <div class="card-body">
+                    <span class="card-tag">ENAKNYA DI ISI APA JIR</span>
+                    <h3 class="card-title"><a href="#">BINGUNG</a></h3>
+                    <p class="card-excerpt">Tips BINGUNG PAGES 2</p>
+                    <a href="#" style="color: #2563eb; font-weight: 600; font-size: 0.9rem;">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Kartu Artikel Tambahan 2 -->
+            <article class="card">
+                <div class="card-body">
+                    <span class="card-tag">TUTORIAL WAIFU MENJADI NYATA</span>
+                    <h3 class="card-title"><a href="#">Panduan Dasar MENGHALU</a></h3>
+                    <p class="card-excerpt">Langkah-langkah MENGHALU DARI 0</p>
+                    <a href="#" style="color: #2563eb; font-weight: 600; font-size: 0.9rem;">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>MILIK ALAWI</p>
+    </footer>
+
+</body>
+</html>
